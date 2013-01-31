@@ -16,6 +16,7 @@ BOARD_USES_ADRENO_200 := true
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
@@ -87,8 +88,9 @@ USE_CAMERA_STUB := true
 
 # tenderloin- these kernel settings are temporary to complete build
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom
-BOARD_KERNEL_BASE := 0x40200000
+#BOARD_KERNEL_BASE := 0x40200000
 BOARD_PAGE_SIZE := 2048
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x1FE00000
 
 BOARD_NEEDS_CUTILS_LOG := true
 

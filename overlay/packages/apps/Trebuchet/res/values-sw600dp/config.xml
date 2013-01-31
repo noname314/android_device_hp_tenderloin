@@ -1,5 +1,7 @@
 <resources>
     <!-- Workspace grid size defaults -->
+    <add-resource type="integer" name="cell_count_x"></add-resource>
     <integer name="cell_count_x">8</integer>
+    <add-resource type="integer" name="cell_count_y"></add-resource>
     <integer name="cell_count_y">7</integer>
 </resources>
