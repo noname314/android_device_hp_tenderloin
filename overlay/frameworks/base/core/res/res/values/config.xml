@@ -155,14 +155,5 @@
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
-    <bool name="config_showNavigationBar">false</bool>
-
-    <!-- Package name providing network location support. -->
-    <add-resource type="string" name="config_networkLocationProviderPackageName"></add-resource>
-    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location.NetworkLocationProvider</string>
-
-    <!-- Package name providing geocoder API support. -->
-    <add-resource type="string" name="config_geocodeProviderPackageName"></add-resource>
-    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location.GeocodeProvider</string>
-
+    <bool name="config_showNavigationBar">true</bool>
 </resources>
